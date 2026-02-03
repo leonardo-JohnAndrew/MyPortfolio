@@ -1,0 +1,61 @@
+p{
+    color : white; 
+    font-size: .9rem;
+}
+h4{
+    color:white;
+    font-size: 1.2rem;
+}
+.footer{
+    /* layout */
+    width: 100%;
+    padding:  2rem  0;
+   
+    /* designs */
+    background-color: rgba(19, 19, 19, 0.8); /* semi-transparent background */
+}
+
+.footer-container{
+    /* layout */
+    max-width: 1140px;
+    margin: auto;
+    display:  grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+
+.left{
+    height: 100%;
+    max-width: 100%;
+    display: flex;;
+    flex-direction: column;
+    padding: 1rem ; 
+
+}
+/* icons layout  */
+.location , .email , .phone {
+    display: flex; 
+    margin-bottom: 0.8rem;
+    
+}
+.location p , .email p , .phone p { 
+    line-height:  30px;
+}
+.right{
+    height: 100%;
+    max-width: 100%;
+    display: flex;;
+    flex-direction: column;
+    padding: 1rem ; 
+
+    p{
+      margin:  1rem 0 ;
+    }; 
+}
+
+/* responsiveness */
+@media screen and (max-width: 768px) {
+    .footer-container{
+        grid-template-columns: 1fr; 
+    }
+}

@@ -1,13 +1,49 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+  /* layout */
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  /* designs */
+  font-family: 'Outfit', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  /* design */
+  background-color:#000; 
+}
+h1, h4, a ,p {
+   /* design */
+   color: gold;
+   text-decoration: none;
+}
+ul{
+  /* layout */
+  list-style: none;
+}
+.btn{
+  /* layout */
+  padding: 0.5rem 1rem;
+
+  /* designs */
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background:  gold;
+  color:   rgb(41, 5, 5);
+  border: 1px solid gold; /* solid   gold border */
+  cursor: pointer;
+}
+.btn:hover{
+  /* designs */
+  background: rgb(255, 255, 255);
+  opacity: 0.8;
+  color: black;
+  transition:  0.3s ease-in-out; /* speed smooth transition */
+}
+
+.btn-light{
+  /* designs */
+  background-color: transparent;
+  color: rgb(238, 255, 6);
 }
